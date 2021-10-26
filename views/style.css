@@ -1,0 +1,48 @@
+.container {
+    background-image: url("https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+    background-position: center center;
+    background-size: cover;
+}
+
+.weather {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.ww1 {
+    letter-spacing: 5px;
+}
+
+.liveweather {
+    text-align: center;
+    padding: 1px;
+}
+
+.world {
+    padding: 7%;
+    /* font-size: 15px; */
+}
+
+.name {
+    padding: 1px;
+    background-color: lightgray;
+    background-size: cover;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(212, 7, 68);
+    color: white;
+}
+
+.img {
+    background-image: url("https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+    background-position: center center;
+    background-attachment: fixed;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather_app_EJS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .container {
+            background-image: url("https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+            /* background-position: fixed; */
+            background-size: cover;
+            /* position: fixed; */
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .weather {
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+            margin-top: 10px;
+            font-family: 'Ultra', serif;
+        }
+        
+        .liveweather {
+            text-align: center;
+            padding: 1px;
+        }
+        
+        .world {
+            /* padding: 7%; */
+            width: 100%;
+            height: 100%;
+            /* font-size: 15px; */
+        }
+        
+        .ww1 {
+            font-family: 'Ultra', serif;
+            text-shadow: white;
+            padding: 5%;
+        }
+        
+        .name {
+            padding: 1px;
+            opacity: 0.7px;
+            background-color: lightgray;
+            background-size: cover;
+        }
+        /* .button {
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        } */
+        
+        .button:hover {
+            background-color: rgb(51, 7, 212);
+            color: rgb(255, 255, 255);
+        }
+        
+        .button {
+            font-family: 'Ultra', serif;
+            color: white;
+            background-color: tomato;
+            font-size: 30px;
+            border-radius: 4px;
+        }
+        
+        #place {
+            /* color: royalblue; */
+            font-family: 'Ultra', serif;
+        }
+        
+        .city {
+            font-family: 'Ultra', serif;
+            font-weight: bolder;
+            /* font-size: 50px; */
+        }
+        
+        .img {
+            background-image: url("https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        
+        .name1 {
+            /* background-color: darkturquoise; */
+            font-family: 'Ultra', serif;
+            text-decoration: underline;
+            /* width: 100px;
+            height: 100px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            text-align: center; */
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Sacramento&family=Ultra&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather">
+            <h1>
+                Weather App
+            </h1>
+            <hr>
+        </div>
+
+        <div class="liveweather">
+            <div class="name">
+                <h3>
+                    *Live Weather
+                </h3>
+                <h6>
+                    (DISCLAIMER:Hey,Please wear a mask and sanitize Your Hand Before You Touch Laptop or Phone Anything...)
+                </h6>
+            </div>
+            <br>
+            <div class="world">
+                <h2 class="ww1">
+                    World Weather Report
+                </h2>
+                <h5>
+                    Do You Wanna Know Any Weather Report Put That Name in Below Box and Know it...
+                </h5>
+                <hr>
+                <hr>
+                </br>
+                <form action="/weather" method="post">
+                    <h1 class="city">
+                        City Name: <input placeholder="Type Here any City Name..." id="place" name="City_Name">
+                        <!-- <button type="button" id="button" class="btn btn-primary">Show</button> -->
+                        <button type="submit" class="button">Show</button>
+
+                    </h1>
+                </form>
+            </div>
+            <br>
+            <div class="name1">
+                <h4>
+                    Design by George R@njithkumar.
+                </h4>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

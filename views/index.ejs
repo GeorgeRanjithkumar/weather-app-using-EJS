@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        .container {
+            position: relative;
+            top: -34rem;
+            margin: 0 15px;
+            text-align: center;
+            opacity: 0.8;
+        }
+    </style> -->
+    <style>
+        .show {
+            text-align: center;
+            /* opacity: 0.8; */
+        }
+        
+        h5,
+        h6 {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="image/img3.jpg" class="img-fluid img-thumbnail" alt="man" style=" width: 100%;
+  height: 350px; background-color: black; object-fit: cover;" />
+    <div class="show bg-light">
+        <div class="card">
+            <h3 class="text-info card-header">The Weather is currently</h3><br>
+            <div class="icon card-body">
+                <img src='http://openweathermap.org/img/wn/<%=icon%>@2x.png' class="bg-dark" style="width: 100px; border-radius: 50px;" class="card-img-top" alt="...">
+                <h6 class="text-success">
+                    <%=description%>
+                </h6>
+                <h5>The temperature in <span class='text-warning'><%= cityname%></span> is <span class="text-danger"> <%=temp%>℃ </span></h5>
+                <h6>Min-Temperature :
+                    <%=minTemp%>℃</h6>
+                <h6>Min-Temperature :
+                    <%=maxTemp%>℃</h6>
+
+                <h5>Humidity :<span class="text-primary"><%=humidity%></span></h5>
+                <h5>Wind Speed :
+                    <%= wind %>
+                        <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-wind-icon-for-your-project-png-image_1599774.jpg" class=" bg-dark" style="width:60px; border-radius: 50px;">
+                </h5>
+            </div>
+            <form action="/back" method="POST">
+                <footer class="card-footer">
+                    <button type="button" class="btn btn-info back">back</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
